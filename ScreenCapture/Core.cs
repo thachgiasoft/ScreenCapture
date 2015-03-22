@@ -3,6 +3,7 @@ using AForge.Video.FFMPEG;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace VideoCapture
@@ -16,7 +17,7 @@ namespace VideoCapture
             _500kbit = 50000,
             _1000kbit = 1000000,
             _2000kbit = 2000000,
-            _3000kbit = 3000000
+            _400kbit = 30000000
         }
 
         AForge.Video.ScreenCaptureStream streamVideo;
@@ -30,13 +31,22 @@ namespace VideoCapture
                        Screen.PrimaryScreen.WorkingArea.Width,
                        Screen.PrimaryScreen.WorkingArea.Height,
                        (int)10,
-                       VideoCodec.MPEG4, (int)(bitRate._3000kbit));
+                       VideoCodec.MPEG4, (int)(bitRate._400kbit));
 
 
             streamVideo = new ScreenCaptureStream(Screen.PrimaryScreen.WorkingArea);
+
+
+
+            DateTime frameControl = DateTime.Now;
             streamVideo.NewFrame += new NewFrameEventHandler((sender,eventArgs) =>
             {
-                writer.WriteVideoFrame(eventArgs.Frame);
+                
+
+                    writer.WriteVideoFrame(eventArgs.Frame);
+                    frameControl = DateTime.Now;
+                
+            
             });
             streamVideo.Start();
         }
