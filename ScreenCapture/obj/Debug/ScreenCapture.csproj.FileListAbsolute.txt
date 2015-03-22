@@ -1,0 +1,8 @@
+E:\[开发]\ScreenCapture\trunk\ScreenCapture\bin\Debug\ScreenCapture.exe.config
+E:\[开发]\ScreenCapture\trunk\ScreenCapture\bin\Debug\ScreenCapture.exe
+E:\[开发]\ScreenCapture\trunk\ScreenCapture\bin\Debug\ScreenCapture.pdb
+E:\[开发]\ScreenCapture\trunk\ScreenCapture\bin\Debug\AForge.Video.dll
+E:\[开发]\ScreenCapture\trunk\ScreenCapture\bin\Debug\AForge.Video.FFMPEG.dll
+E:\[开发]\ScreenCapture\trunk\ScreenCapture\obj\Debug\ScreenCapture.csprojResolveAssemblyReference.cache
+E:\[开发]\ScreenCapture\trunk\ScreenCapture\obj\Debug\ScreenCapture.exe
+E:\[开发]\ScreenCapture\trunk\ScreenCapture\obj\Debug\ScreenCapture.pdb
